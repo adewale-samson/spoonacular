@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Recipe Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based web application that allows users to search for recipes, view detailed recipe information, and navigate between different pages. The app utilizes the Material-UI library for styling and `react-router-dom` for routing.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Search for recipes by name, ingredients, and nutrients.
+- View a list of recipes on the homepage.
+- Click on a recipe card to view detailed information.
+- Navigate back to the homepage from the recipe details page.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository to your local machine.
+2. Navigate to the project directory using the terminal.
+3. Install the required dependencies using the following command:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   npm install
+   ```
 
-### `npm test`
+4. Start the development server:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+The app should now be running locally on `http://localhost:3000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Folder Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The project follows a structured organization to manage components and pages effectively:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `src/Components`: Contains reusable components like `Card` that are used throughout the app.
+- `src/Pages/Homepage.js`: Displays the homepage where users can search for recipes and see a list of recipe cards.
+- `src/Pages/Recipe.js`: Displays detailed information about a selected recipe, including image, title, content, ingredients, instructions, and nutrient information.
+- `src/theme.js`: Defines the Material-UI theme for consistent styling.
 
-### `npm run eject`
+## Routing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The app uses the `react-router-dom` library to manage routing:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `/`: The homepage where users can search for recipes and see a list of recipe cards.
+- `/recipe`: The recipe details page where users can view detailed information about a selected recipe.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Open the app in your web browser by navigating to `http://localhost:3000` (if it's not already open).
 
-## Learn More
+2. **Homepage:**
+   - Enter search criteria in the search bar to search for recipes.
+   - Click on a recipe card to view its detailed information.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Recipe Details Page:**
+   - On the recipe details page, you can see the image, title, content, ingredients, instructions, and nutrient information for the selected recipe.
+   - Click the "Back to homepage" button to navigate back to the homepage.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Contributions are welcome! If you find any bugs or want to add features, feel free to create issues or pull requests in the repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy exploring and experimenting with this Recipe Search App! If you have any questions or suggestions, please don't hesitate to contact us.
